@@ -1,17 +1,13 @@
 //! hex-mcp — binary inspection and patching over MCP.
 
-mod args;
-mod policy;
-mod tools;
-
 use std::path::PathBuf;
 use std::sync::Arc;
 
 use clap::Parser;
 use mcp_toolkit::ServerOptions;
 
-use policy::Policy;
-use tools::HexTools;
+use hex_mcp::policy::Policy;
+use hex_mcp::tools::HexTools;
 
 #[derive(Parser, Debug)]
 #[command(name = "hex-mcp", version, about = "Hex viewing and patching as an MCP server")]
