@@ -1,5 +1,21 @@
 # hex-mcp
 
+> ## ⚠️ Superseded by [common-mcp](https://github.com/Bluscream/common-mcp)
+>
+> These tools now live in **[common-mcp](https://github.com/Bluscream/common-mcp)**,
+> which serves them alongside the rest of the family from one process. The tool
+> names and arguments are unchanged, so switching is only a change of command:
+>
+> ```diff
+> - "command": "/path/to/hex"
+> + "command": "/path/to/common-mcp"
+> ```
+>
+> Beyond what this server did, common-mcp enforces the file size cap through a single shared policy, so `hex_view` and `hex_patch` are confined exactly as the filesystem tools are.
+>
+> This repository is archived and will not receive further changes. The release
+> below remains downloadable.
+
 Hex viewing and byte-patching of binary files, as an MCP server.
 
 ```bash
